@@ -1,5 +1,5 @@
 import { Moon, Sun } from 'lucide-react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 
 const Header = () => {
@@ -9,10 +9,23 @@ const Header = () => {
     setIsDarkMode(!isDarkMode)
     if(!isDarkMode){
       document.documentElement.classList.add('dark')
+      localStorage.setItem('theme','dark')
     }else{
       document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme','light')
     }
   }
+
+  useEffect(()=>{
+    const storedTheme = localStorage.getItem('theme')
+    if(storedTheme ==="dark"){
+      document.documentElement.classList.add('dark')
+      setIsDarkMode(true)
+    }else{
+      document.documentElement.classList.remove('dark')
+      setIsDarkMode(false) 
+    }
+  })
   
   
 
