@@ -43,10 +43,10 @@ const Header = () => {
         <nav className='text-lg text-primary ' >
           <ul className='flex items-center space-x-4  '>
             <li className='hover:text-foreground'><a href="#hero">Home</a></li>
-            <li className='hover:text-foreground'><a href="about">About</a></li>
-            <li className='hover:text-foreground'><a href="skills">Skills</a></li>
-            <li className='hover:text-foreground'><a href="projects">Projects</a></li>
-            <li className='hover:text-foreground'><a href="contact">Contact</a></li>
+            <li className='hover:text-foreground'><a href="#about">About</a></li>
+            <li className='hover:text-foreground'><a href="#skills">Skills</a></li>
+            <li className='hover:text-foreground'><a href="#projects">Projects</a></li>
+            <li className='hover:text-foreground'><a href="#contact">Contact</a></li>
           </ul>
         </nav>
        {  isDarkMode?
