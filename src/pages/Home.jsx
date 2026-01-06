@@ -6,7 +6,10 @@ const Home = () => {
   return (
     <div>
       <Header/>
+      <main>
       <HeroSection/>
+      </main>
+      
     </div>
   )
 }

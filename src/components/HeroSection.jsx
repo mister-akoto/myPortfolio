@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <main id='hero' className='w-full min-h-screen flex flex-col justify-center items-center space-y-6'>
+    <section id='hero' className='w-full min-h-screen flex flex-col justify-center items-center space-y-6'>
       <div className='flex flex-col justify-center items-center space-y-4 mx-8'>
         <h2 className='text-2xl md:text-3xl text-primary'> Hi, I'm Akoto Etornam</h2>
         <h3 className='text-xl md:text-2xl text-foreground'>Frontend Developer</h3>
@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className='animate-bounce absolute top-11/12 '>
           <ArrowDown size={30} />
         </div>
-    </main>
+    </section>
   )
 }
 
