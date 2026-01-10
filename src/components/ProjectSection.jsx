@@ -6,6 +6,8 @@ const projects = [
     name: 'Rest Countries',
     image: 'public/projects/rest countries.jpg',
     description: 'A webpage that fetches and display data about countries, their capital and their border countries too!',
+    githubLink: 'https://github.com/mister-akoto/restcountries',
+    demoLink:'https://countriesweb1.netlify.app/',
     tools: ['React.js', 'HTML/CSS']
 
   },
@@ -13,6 +15,8 @@ const projects = [
     name: 'Trivia App',
     image: 'public/projects/trivia.jpg',
     description: 'A general knowledge trivia quiz, from music to movie trivia questions! ',
+    githubLink: 'https://github.com/mister-akoto/Trivia-App',
+    demoLink: 'https://illustrious-fudge-279012.netlify.app/',
     tools: ['React.js', 'HTML/CSS']
 
   }
@@ -20,7 +24,7 @@ const projects = [
 
 const ProjectSection = () => {
   return (
-    <section className='min-h-screen flex flex-col justify-center items-center text-center my-10'>
+    <section id='projects' className='min-h-screen flex flex-col justify-center items-center text-center my-10'>
       <div className='space-y-2'>
         <h2 className='text-2xl md:text-3xl text-primary'>Featured Projects</h2>
         <p className='max-w-2xl tracking-tight text-base md:text-lg'>A selection of my recent works and personal projects</p>
@@ -38,14 +42,18 @@ const ProjectSection = () => {
                 <p className='text-foreground/60 grow min-h-18'>{project.description}</p>
                 <div className='flex gap-2 '>
                 {project.tools.map((tool)=>(
-                  <div className='border rounded-full p-2 hover:bg-primary/60 hover:scale-105 cursor-pointer transition-all delay-100'>
+                  <div className='border rounded-full p-2 '>
                     {tool}
                   </div>
                 ))}
                 </div>
                 <div className='flex gap-4'>
+                  <a href={project.githubLink}>
                   <Github size={30} className='text-foreground hover:scale-105 transition-all delay-105 cursor-pointer'/>
-                  <ExternalLink size={30} className='text-foreground hover:scale105 transition-all delay-105 cursor-pointer'/>
+                  </a>
+                  <a href={project.demoLink}>
+                    <ExternalLink size={30} className='text-foreground hover:scale-105 transition-all delay-105 cursor-pointer'/>
+                    </a>
                 </div>
               </div>
             </div>
