@@ -11,13 +11,13 @@ const HeroSection = () => {
       </div>
 
       <div className='flex justify-center items-center space-x-4 '>
-        <a href="" className='bg-primary hover:bg-primary/70 rounded-md py-3 px-4 text-white hover:scale-110 transition-all delay-100'>View My Work</a>
-        <a href="" className='border border-border rounded-md py-3 px-4 hover:scale-110 transition-all delay-300'>Contact Me</a>
+        <a href="#projects" className='bg-primary hover:bg-primary/70 rounded-md py-3 px-4 text-white hover:scale-110 transition-all delay-100'>View My Work</a>
+        <a href="#contact" className='border border-border rounded-md py-3 px-4 hover:scale-110 transition-all delay-300'>Contact Me</a>
       </div>
       <div className='flex gap-4 justify-center items-center'>
-        <a href="" className='hover:scale-105 transition-all delay-100'><Github size={30}/></a>
-        <a href="" className='hover:scale-105 transition-all delay-100'><Linkedin size={30}/></a>
-        <a href="" className='hover:scale-105 transition-all delay-100'><Mail size={30}/></a>  
+        <a href="https://github.com/mister-akoto" className='hover:scale-105 transition-all delay-100'><Github size={30}/></a>
+        <a href="https://www.linkedin.com/in/akoto-etornam/" className='hover:scale-105 transition-all delay-100'><Linkedin size={30}/></a>
+        <a href="mailto:etornamtutuakoto@gmail.com" className='hover:scale-105 transition-all delay-100'><Mail size={30}/></a>  
       </div>
         <div className='animate-bounce absolute top-11/12 '>
           <ArrowDown size={30} />
