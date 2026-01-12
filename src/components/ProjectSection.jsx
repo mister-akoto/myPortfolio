@@ -4,7 +4,7 @@ import React from 'react'
 const projects = [
   {
     name: 'Rest Countries',
-    image: 'public/projects/rest countries.jpg',
+    image: 'projects/rest countries.jpg',
     description: 'A webpage that fetches and display data about countries, their capital and their border countries too!',
     githubLink: 'https://github.com/mister-akoto/restcountries',
     demoLink:'https://countriesweb1.netlify.app/',
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     name: 'Trivia App',
-    image: 'public/projects/trivia.jpg',
+    image: 'projects/trivia.jpg',
     description: 'A general knowledge trivia quiz, from music to movie trivia questions! ',
     githubLink: 'https://github.com/mister-akoto/Trivia-App',
     demoLink: 'https://illustrious-fudge-279012.netlify.app/',
