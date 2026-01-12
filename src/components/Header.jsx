@@ -63,10 +63,10 @@ const Header = () => {
         <nav className='text-lg text-primary w-full ' >
           <ul className='flex flex-col items-center space-x-4 w-full'>
             <li className='hover:text-foreground mx-auto'><a href="#hero">Home</a></li>
-            <li className='hover:text-foreground mx-auto'><a href="about">About</a></li>
-            <li className='hover:text-foreground mx-auto'><a href="skills">Skills</a></li>
-            <li className='hover:text-foreground mx-auto'><a href="projects">Projects</a></li>
-            <li className='hover:text-foreground mx-auto'><a href="contact">Contact</a></li>
+            <li className='hover:text-foreground mx-auto'><a href="#about">About</a></li>
+            <li className='hover:text-foreground mx-auto'><a href="#skills">Skills</a></li>
+            <li className='hover:text-foreground mx-auto'><a href="#projects">Projects</a></li>
+            <li className='hover:text-foreground mx-auto'><a href="#contact">Contact</a></li>
        {  isDarkMode?<div className='flex mt-2 gap-2 mx-auto' onClick={toggleTheme}>
          <Sun size={24} className='text-yellow-300 cursor-pointer' />
          <p>Light Mode</p>
